@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
-import { Mail, Phone, Globe, Linkedin, Instagram, Sparkles, Zap, Cpu } from "lucide-react";
+import { Mail, Phone, Globe, Linkedin, Instagram, Sparkles, Zap } from "lucide-react";
 import behanceFooterLogo from "@/assets/behance-footer.png";
+import logo from "@/assets/logo.png";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -88,7 +89,7 @@ export const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <Cpu className="w-8 h-8 text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]" />
+              <img src={logo} alt="Neura Labs" className="w-10 h-10 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
               <h3 className="text-2xl font-bold gradient-text">Neura Labs</h3>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -194,7 +195,7 @@ export const Footer = () => {
                   ) : (
                     <img src={social.image} alt={social.label} className="w-5 h-5 relative z-10 opacity-70 group-hover:opacity-100 smooth-transition" />
                   )}
-                  
+
                   {/* Neon glow effect on hover */}
                   <motion.div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 smooth-transition"

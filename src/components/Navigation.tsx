@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, Mail, Menu } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -88,11 +89,16 @@ export const Navigation = () => {
           </Sheet>
 
           <motion.div
-            className="text-2xl font-bold gradient-text tracking-tight"
-            style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, letterSpacing: '-0.02em' }}
             whileHover={{ scale: 1.05 }}
+            className="flex items-center gap-2"
           >
-            Neura Labs
+            <img src={logo} alt="Neura Labs" className="h-10 w-auto object-contain" />
+            <span
+              className="text-2xl font-bold gradient-text tracking-tight"
+              style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, letterSpacing: '-0.02em' }}
+            >
+              Neura Labs
+            </span>
           </motion.div>
         </div>
 
