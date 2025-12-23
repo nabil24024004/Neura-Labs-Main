@@ -21,6 +21,9 @@ export interface Project {
     whyDifferent?: string[];
     metrics?: Record<string, string>;
     tags?: string[];
+    liveUrl?: string;
+    behanceUrl?: string;
+    images?: string[];
 }
 
 export const projects: Project[] = [
@@ -34,6 +37,14 @@ export const projects: Project[] = [
         techStack: ["Next.js", "Lovable Cloud", "PostgreSQL", "Realtime Messaging", "Object Storage"],
         status: "Live (Real Users)",
         platform: "Web (Mobile-First Responsive)",
+        liveUrl: "https://peerhireaaub.vercel.app",
+        behanceUrl: "https://www.behance.net/nabilahmad24",
+        images: [
+            "/src/assets/projects/peerhire/hero.png",
+            "/src/assets/projects/peerhire/services.png",
+            "/src/assets/projects/peerhire/freelancers.png",
+            "/src/assets/projects/peerhire/signup.png"
+        ],
         overview: "PeerHire is a university-exclusive freelancing platform designed to connect students who need academic assistance with fellow students who can provide it. Unlike generic freelancing platforms, PeerHire is purpose-built for varsity-level work—including assignments, lab reports, documentation, and academic writing—within a trusted campus environment. The platform enables students to act as hirers, freelancers, or both using a single verified university email. With real-time dashboards, live availability boards, messaging, and reputation-based ratings, PeerHire transforms informal peer help into a structured, professional, and scalable ecosystem.",
         problem: [
             "No trusted, university-verified marketplace",
