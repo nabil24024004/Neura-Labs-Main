@@ -89,7 +89,7 @@ export const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <img src={logo} alt="Neura Labs" className="w-10 h-10 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
+              <img src={logo} alt="Neura Labs" className="w-20 h-20 object-contain drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
               <h3 className="text-2xl font-bold gradient-text">Neura Labs</h3>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
