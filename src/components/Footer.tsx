@@ -13,9 +13,9 @@ export const Footer = () => {
   ];
 
   const contactInfo = [
-    { icon: Mail, text: "hello@neuralabs.co", href: "mailto:hello@neuralabs.co" },
+    { icon: Mail, text: "hello@neuralabs.co", href: "mailto:neuralabsaaub@gmail.com" },
     { icon: Phone, text: "+880 1823 604026", href: "tel:+8801823604026" },
-    { icon: Globe, text: "www.neuralabs.co", href: "https://neuralabs.lovable.app" },
+    { icon: Globe, text: "www.neuralabs.co", href: "https://neuralabsaaub.vercel.app" },
   ];
 
   const quickLinks = [
