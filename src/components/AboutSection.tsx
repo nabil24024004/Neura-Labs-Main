@@ -6,7 +6,7 @@ import jamilImage from "@/assets/jamil-jim.png";
 import rezwanImage from "@/assets/rezwan-shajib.jpg";
 const founders = [{
   name: "Azwad Abrar",
-  role: "CEO & Product Designer",
+  role: "Product Designer & Frontend Dev",
   quote: "I design how intelligence feels.",
   color: "from-white/20 to-white/5",
   image: azwadImage
