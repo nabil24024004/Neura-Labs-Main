@@ -40,10 +40,10 @@ export const projects: Project[] = [
         liveUrl: "https://peerhireaaub.vercel.app",
         behanceUrl: "https://www.behance.net/nabilahmad24",
         images: [
-            "/src/assets/projects/peerhire/hero.png",
-            "/src/assets/projects/peerhire/services.png",
-            "/src/assets/projects/peerhire/freelancers.png",
-            "/src/assets/projects/peerhire/signup.png"
+            "/projects/peerhire/hero.png",
+            "/projects/peerhire/services.png",
+            "/projects/peerhire/freelancers.png",
+            "/projects/peerhire/signup.png"
         ],
         overview: "PeerHire is a university-exclusive freelancing platform designed to connect students who need academic assistance with fellow students who can provide it. Unlike generic freelancing platforms, PeerHire is purpose-built for varsity-level work—including assignments, lab reports, documentation, and academic writing—within a trusted campus environment. The platform enables students to act as hirers, freelancers, or both using a single verified university email. With real-time dashboards, live availability boards, messaging, and reputation-based ratings, PeerHire transforms informal peer help into a structured, professional, and scalable ecosystem.",
         problem: [
