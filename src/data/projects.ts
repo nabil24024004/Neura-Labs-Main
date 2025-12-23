@@ -38,7 +38,7 @@ export const projects: Project[] = [
         status: "Live (Real Users)",
         platform: "Web (Mobile-First Responsive)",
         liveUrl: "https://peerhireaaub.vercel.app",
-        behanceUrl: "https://www.behance.net/nabilahmad24",
+        behanceUrl: "https://www.behance.net/neuralabs-projects",
         images: [
             "/projects/peerhire/hero.png",
             "/projects/peerhire/services.png",
