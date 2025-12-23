@@ -7,9 +7,9 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-blue-400" },
+    { icon: Facebook, href: "https://www.facebook.com/people/Neura-Labs/61584209024278/?rdid=HkHVYEWWHT401oN6&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1GVQAYTGdd%2F", label: "Facebook", color: "hover:text-blue-400" },
     { icon: Instagram, href: "https://www.instagram.com/neuralabs.co/", label: "Instagram", color: "hover:text-pink-400" },
-    { image: behanceFooterLogo, href: "#", label: "Behance", color: "hover:text-purple-400" },
+    { image: behanceFooterLogo, href: "https://www.behance.net/neuralabs-projects", label: "Behance", color: "hover:text-purple-400" },
   ];
 
   const contactInfo = [
