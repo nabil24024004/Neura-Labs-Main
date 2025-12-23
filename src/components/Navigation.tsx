@@ -92,7 +92,7 @@ export const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2"
           >
-            <img src={logo} alt="Neura Labs" className="h-16 w-auto object-contain" />
+            
             <span
               className="text-2xl font-bold gradient-text tracking-tight"
               style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, letterSpacing: '-0.02em' }}
