@@ -92,7 +92,7 @@ export const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             className="flex items-center gap-2"
           >
-            
+
             <span
               className="text-2xl font-bold gradient-text tracking-tight"
               style={{ fontFamily: "'Outfit', sans-serif", fontWeight: 700, letterSpacing: '-0.02em' }}
@@ -131,7 +131,7 @@ export const Navigation = () => {
               variant="ghost"
               size="sm"
               className="gap-2 relative overflow-hidden group border border-border/40 hover:border-foreground/60 smooth-transition"
-              onClick={() => scrollToSection("connect")}
+              onClick={() => window.location.href = "tel:+8801788992953"}
             >
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0"
