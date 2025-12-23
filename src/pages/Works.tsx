@@ -4,87 +4,23 @@ import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { projects } from "@/data/projects";
+import { useNavigate } from "react-router-dom";
 
 const categories = ["All", "Web App", "Automation", "Product Design", "Analytics"];
 
-const projects = [
-  {
-    title: "PeerHire",
-    category: "Web App",
-    description: "A University-exclusive platform for outsourcing varsity work",
-    gradient: "from-blue-500/20 to-purple-500/20",
-    tags: ["Assignment", "Ratings", "Live"],
-    metrics: { Projects: "100+", StudentBase: "400+", AvgRating: "4.8/5" }
-  },
-  {
-    title: "Smart Analytics Dashboard",
-    category: "Product Design",
-    description: "Real-time data visualization with predictive insights",
-    gradient: "from-green-500/20 to-teal-500/20",
-    tags: ["Data Viz", "Predictive AI", "Dashboard"],
-    metrics: { dataPoints: "10M+", updateRate: "Real-time", accuracy: "92%" }
-  },
-  {
-    title: "Voice AI Assistant",
-    category: "AI Development",
-    description: "Natural language processing for enterprise workflows",
-    gradient: "from-orange-500/20 to-red-500/20",
-    tags: ["Voice AI", "NLP", "Enterprise"],
-    metrics: { languages: "15+", accuracy: "94%", responseTime: "0.5s" }
-  },
-  {
-    title: "Document Intelligence",
-    category: "AI Development",
-    description: "Automated document processing and extraction system",
-    gradient: "from-pink-500/20 to-purple-500/20",
-    tags: ["OCR", "Document AI", "Automation"],
-    metrics: { accuracy: "98%", processingTime: "2s/page", formats: "20+" }
-  },
-  {
-    title: "Predictive Maintenance System",
-    category: "Analytics",
-    description: "AI-powered system predicting equipment failures before they occur",
-    gradient: "from-cyan-500/20 to-blue-500/20",
-    tags: ["IoT", "Predictive Analytics", "Industrial"],
-    metrics: { accuracy: "91%", downtime: "-60%", savings: "$2M+" }
-  },
-  {
-    title: "Sentiment Analysis Platform",
-    category: "AI Development",
-    description: "Real-time brand monitoring across social media channels",
-    gradient: "from-violet-500/20 to-purple-500/20",
-    tags: ["Sentiment AI", "Social Media", "Analytics"],
-    metrics: { sources: "50+", accuracy: "89%", languages: "25+" }
-  },
-  {
-    title: "Supply Chain Optimizer",
-    category: "Automation",
-    description: "ML-driven logistics optimization reducing costs by 40%",
-    gradient: "from-amber-500/20 to-orange-500/20",
-    tags: ["ML", "Logistics", "Optimization"],
-    metrics: { costReduction: "40%", efficiency: "+35%", routes: "1000+" }
-  },
-  {
-    title: "Medical Imaging AI",
-    category: "AI Development",
-    description: "Deep learning system for medical diagnosis assistance",
-    gradient: "from-rose-500/20 to-pink-500/20",
-    tags: ["Deep Learning", "Healthcare", "Computer Vision"],
-    metrics: { accuracy: "96%", scans: "100K+", time: "-70%" }
-  },
-];
-
 const Works = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const navigate = useNavigate();
 
-  const filteredProjects = selectedCategory === "All" 
-    ? projects 
+  const filteredProjects = selectedCategory === "All"
+    ? projects
     : projects.filter(project => project.category === selectedCategory);
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navigation />
-      
+
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
@@ -138,10 +74,11 @@ const Works = () => {
                 key={project.title}
                 className="relative group cursor-pointer animate-fade-in hover-scale"
                 style={{ animationDelay: `${index * 50}ms` }}
+                onClick={() => navigate(`/works/${project.slug}`)}
               >
                 <div className="glass-panel rounded-2xl p-6 h-full flex flex-col overflow-hidden smooth-transition group-hover:-translate-y-2">
                   <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-100 smooth-transition`} />
-                  
+
                   <div className="relative z-10 flex-1 flex flex-col">
                     <div className="mb-4">
                       <Badge variant="secondary" className="mb-3">
@@ -156,7 +93,7 @@ const Works = () => {
                     </div>
 
                     <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tags.map((tag) => (
+                      {project.tags?.map((tag) => (
                         <span
                           key={tag}
                           className="text-xs px-2 py-1 rounded-full bg-background/50 border border-border/40"
@@ -168,7 +105,7 @@ const Works = () => {
 
                     <div className="mt-auto pt-4 border-t border-border/40">
                       <div className="grid grid-cols-3 gap-2 text-xs">
-                        {Object.entries(project.metrics).slice(0, 3).map(([key, value]) => (
+                        {project.metrics && Object.entries(project.metrics).slice(0, 3).map(([key, value]) => (
                           <div key={key}>
                             <div className="text-muted-foreground capitalize">{key}</div>
                             <div className="font-semibold">{value}</div>
@@ -210,7 +147,7 @@ const Works = () => {
             <p className="text-xl text-muted-foreground mb-8">
               Let's build something extraordinary together. Our team is ready to turn your vision into reality.
             </p>
-            <Button 
+            <Button
               size="lg"
               onClick={() => {
                 window.location.href = '/#connect';
