@@ -53,8 +53,8 @@ const ProjectDetail = () => {
                 <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-10`} />
                 <div className="container mx-auto px-4 relative z-10">
                     <Button
-                        variant="ghost"
-                        className="mb-8 hover:bg-white/5"
+                        variant="outline"
+                        className="mb-8 border-white/20 hover:bg-white/10 hover:border-white/50 hover:text-white transition-all"
                         onClick={() => navigate("/works")}
                     >
                         <ArrowLeft className="mr-2 h-4 w-4" /> Back to Works
