@@ -48,7 +48,7 @@ All colors MUST be HSL.
     /* Glassmorphism Effects */
     --glass-blur: blur(20px);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     /* Shadows & Glows */
     --shadow-glow: 0 0 40px hsl(var(--glow-white) / 0.1);
     --shadow-elegant: 0 20px 60px -10px hsl(0 0% 0% / 0.5);
@@ -65,7 +65,12 @@ All colors MUST be HSL.
     font-family: 'Inter', -apple-system, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Space Grotesk', -apple-system, sans-serif;
     font-weight: 700;
   }
