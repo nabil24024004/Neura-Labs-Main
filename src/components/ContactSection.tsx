@@ -184,46 +184,46 @@ export const ContactSection = () => {
               {/* Name Field */}
               <div className="relative flex-1">
                 <motion.label animate={{
-                  y: focusedField === "name" || formData.name ? -28 : 0,
+                  y: focusedField === "name" || formData.name ? -12 : 16,
                   scale: focusedField === "name" || formData.name ? 0.85 : 1,
                   color: focusedField === "name" ? "hsl(var(--foreground))" : "hsl(var(--muted-foreground))"
-                }} className="absolute left-4 top-4 pointer-events-none origin-left smooth-transition text-sm font-medium">
+                }} className="absolute left-4 top-0 pointer-events-none origin-left smooth-transition text-sm font-medium z-10 bg-transparent px-1">
                   Your Name
                 </motion.label>
                 <input type="text" value={formData.name} onChange={e => setFormData({
                   ...formData,
                   name: e.target.value
-                })} onFocus={() => setFocusedField("name")} onBlur={() => setFocusedField(null)} className="w-full bg-background/40 border border-white/10 rounded-lg px-4 pt-6 pb-2 text-foreground focus:border-white/40 focus:ring-2 focus:ring-white/20 smooth-transition outline-none" required />
+                })} onFocus={() => setFocusedField("name")} onBlur={() => setFocusedField(null)} className="w-full bg-background/40 border border-white/10 rounded-lg px-4 py-4 text-foreground focus:border-white/40 focus:ring-2 focus:ring-white/20 smooth-transition outline-none" required />
               </div>
 
               {/* Email Field */}
               <div className="relative flex-1">
                 <motion.label animate={{
-                  y: focusedField === "email" || formData.email ? -28 : 0,
+                  y: focusedField === "email" || formData.email ? -12 : 16,
                   scale: focusedField === "email" || formData.email ? 0.85 : 1,
                   color: focusedField === "email" ? "hsl(var(--foreground))" : "hsl(var(--muted-foreground))"
-                }} className="absolute left-4 top-4 pointer-events-none origin-left smooth-transition text-sm font-medium">
+                }} className="absolute left-4 top-0 pointer-events-none origin-left smooth-transition text-sm font-medium z-10 bg-transparent px-1">
                   Email Address
                 </motion.label>
                 <input type="email" value={formData.email} onChange={e => setFormData({
                   ...formData,
                   email: e.target.value
-                })} onFocus={() => setFocusedField("email")} onBlur={() => setFocusedField(null)} className="w-full bg-background/40 border border-white/10 rounded-lg px-4 pt-6 pb-2 text-foreground focus:border-white/40 focus:ring-2 focus:ring-white/20 smooth-transition outline-none" required />
+                })} onFocus={() => setFocusedField("email")} onBlur={() => setFocusedField(null)} className="w-full bg-background/40 border border-white/10 rounded-lg px-4 py-4 text-foreground focus:border-white/40 focus:ring-2 focus:ring-white/20 smooth-transition outline-none" required />
               </div>
 
               {/* Message Field */}
               <div className="relative flex-[2]">
                 <motion.label animate={{
-                  y: focusedField === "message" || formData.message ? -28 : 0,
+                  y: focusedField === "message" || formData.message ? -12 : 16,
                   scale: focusedField === "message" || formData.message ? 0.85 : 1,
                   color: focusedField === "message" ? "hsl(var(--foreground))" : "hsl(var(--muted-foreground))"
-                }} className="absolute left-4 top-4 pointer-events-none origin-left smooth-transition text-sm font-medium">
+                }} className="absolute left-4 top-0 pointer-events-none origin-left smooth-transition text-sm font-medium z-10 bg-transparent px-1">
                   Your Message
                 </motion.label>
                 <textarea value={formData.message} onChange={e => setFormData({
                   ...formData,
                   message: e.target.value
-                })} onFocus={() => setFocusedField("message")} onBlur={() => setFocusedField(null)} className="w-full h-full bg-background/40 border border-white/10 rounded-lg px-4 pt-6 pb-2 text-foreground focus:border-white/40 focus:ring-2 focus:ring-white/20 smooth-transition outline-none min-h-[200px] resize-none" required />
+                })} onFocus={() => setFocusedField("message")} onBlur={() => setFocusedField(null)} className="w-full h-full bg-background/40 border border-white/10 rounded-lg px-4 py-4 text-foreground focus:border-white/40 focus:ring-2 focus:ring-white/20 smooth-transition outline-none min-h-[200px] resize-none" required />
               </div>
 
               {/* Submit Button */}
