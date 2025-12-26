@@ -21,14 +21,14 @@ export const ContactSection = () => {
 
     try {
       await emailjs.send(
-        "service_pxvd8m8",
-        "template_ccp4fi9",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        "9KaRQQTYYLWLDN_ee"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setIsSubmitted(true);
