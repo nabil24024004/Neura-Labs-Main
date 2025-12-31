@@ -51,13 +51,13 @@ export const ContactSection = () => {
     icon: Mail,
     label: "Email",
     value: "hello@neuralabs.co",
-    href: "mailto:hello@neuralabs.co",
+    href: "mailto:neuralabsaaub@gmail.com",
     delay: 0.1
   }, {
     icon: Globe,
     label: "Website",
     value: "www.neuralabs.co",
-    href: "https://neuralab.lovable.app",
+    href: "https://neuralabsagency.vercel.app",
     delay: 0.1
   }, {
     icon: Phone,
@@ -69,7 +69,7 @@ export const ContactSection = () => {
   const socialLinks = [{
     icon: Linkedin,
     label: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/company/neura-labs-agency/",
     delay: 0.4
   }, {
     icon: Instagram,
@@ -79,7 +79,7 @@ export const ContactSection = () => {
   }, {
     image: behanceLogo,
     label: "Behance",
-    href: "#",
+    href: "https://www.behance.net/neuralabs-projects",
     delay: 0.6
   }];
   return <section id="connect" className="py-32 relative overflow-hidden">
