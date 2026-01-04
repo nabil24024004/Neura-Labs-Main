@@ -87,18 +87,29 @@ export const HeroSection = () => {
         }} transition={{
           delay: 1
         }} className="pt-12">
-          <p className="text-sm text-muted-foreground mb-4">Trusted by innovative companies</p>
-          <div className={`relative w-full opacity-40 ${isMobile ? 'overflow-hidden' : ''}`}>
-            <motion.div className={`flex gap-8 whitespace-nowrap ${!isMobile ? 'justify-center' : ''}`} animate={isMobile ? {
-              x: ["0%", "-50%"]
-            } : {}} transition={isMobile ? {
-              duration: 20,
-              repeat: Infinity,
-              ease: "linear"
-            } : {}}>
-              {(isMobile ? [...["TechCorp", "InnovateLabs", "FutureAI", "DataFlow"], ...["TechCorp", "InnovateLabs", "FutureAI", "DataFlow"]] : ["TechCorp", "InnovateLabs", "FutureAI", "DataFlow"]).map((company, i) => <div key={`${company}-${i}`} className="text-lg font-semibold">
-                {company}
-              </div>)}
+          <p className="text-center text-sm text-muted-foreground mb-8">Trusted by industry leaders</p>
+          <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)]">
+            <motion.div
+              className="flex gap-12 md:gap-16"
+              animate={{
+                x: ["0%", "-50%"],
+              }}
+              transition={{
+                x: {
+                  duration: 20,
+                  repeat: Infinity,
+                  ease: "linear",
+                },
+              }}
+            >
+              {[...["TechCorp", "Innovate", "NextGen", "Quantum", "Velocity", "Apex"], ...["TechCorp", "Innovate", "NextGen", "Quantum", "Velocity", "Apex"]].map((logo, index) => (
+                <span
+                  key={`${logo}-${index}`}
+                  className="text-xl font-semibold text-white/30 whitespace-nowrap flex-shrink-0"
+                >
+                  {logo}
+                </span>
+              ))}
             </motion.div>
           </div>
         </motion.div>
