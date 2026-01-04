@@ -75,7 +75,7 @@ export const TestimonialsSection = () => {
                     viewport={{ once: true }}
                     className="flex flex-col items-center justify-center max-w-xl mx-auto mb-12"
                 >
-                    <div className="border border-white/20 py-1.5 px-4 rounded-full text-sm text-muted-foreground">Testimonials</div>
+                    {/* <div className="border border-white/20 py-1.5 px-4 rounded-full text-sm text-muted-foreground">Testimonials</div> */}
 
                     <h2 className="text-4xl md:text-5xl font-bold text-foreground mt-6 text-center tracking-tight">
                         What our users say
