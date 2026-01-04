@@ -54,7 +54,7 @@ export const HeroSection = () => {
 
         <h1 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tight leading-[1.1]">
           <span className="block premium-gradient-text">Designing the Future</span>
-          <span className="block premium-gradient-text-alt">of Intelligence</span>
+          <span className="block premium-gradient-text-alt">of Intelligence.</span>
         </h1>
 
         <motion.p initial={{
@@ -75,8 +75,22 @@ export const HeroSection = () => {
           y: 0
         }} transition={{
           delay: 0.7
-        }} className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+        }} className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
 
+          {/* Premium Button with Chromatic Border */}
+          <button
+            onClick={() => scrollToSection("connect")}
+            className="group relative px-8 py-4 rounded-full bg-white text-background font-semibold text-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)]"
+          >
+            {/* Chromatic border effect */}
+            <span className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 via-white to-fuchsia-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm -z-10" />
+            <span className="absolute inset-[1px] rounded-full bg-white -z-10" />
+
+            <span className="flex items-center gap-2">
+              Let's Connect
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </button>
 
         </motion.div>
 
