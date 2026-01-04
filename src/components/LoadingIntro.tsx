@@ -33,17 +33,17 @@ export const LoadingIntro = ({ onComplete }: { onComplete: () => void }) => {
           transition={{ duration: 0.6 }}
           className="space-y-4"
         >
-          <h1 className="text-5xl md:text-7xl font-bold gradient-text glow-text">
+          <h2 className="text-5xl md:text-7xl font-bold gradient-text glow-text">
             Neura Labs
-          </h1>
-          <motion.p
+          </h2>
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="text-muted-foreground text-lg"
           >
             Designing the Future of Intelligence
-          </motion.p>
+          </motion.p> */}
         </motion.div>
 
         <div className="w-64 mx-auto space-y-2">
