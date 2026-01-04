@@ -52,10 +52,9 @@ export const HeroSection = () => {
       }} className="text-center space-y-8 max-w-5xl mx-auto">
 
 
-        <h1 className="text-6xl md:text-8xl font-bold gradient-text glow-text leading-tight">
-          Designing the Future
-          <br />
-          of Intelligence
+        <h1 className="text-5xl sm:text-6xl md:text-8xl font-black tracking-tight leading-[1.1]">
+          <span className="block premium-gradient-text">Designing the Future</span>
+          <span className="block premium-gradient-text-alt">of Intelligence</span>
         </h1>
 
         <motion.p initial={{
