@@ -66,7 +66,7 @@ const logos = ["TechCorp", "Innovate", "NextGen", "Quantum", "Velocity", "Apex"]
 
 export const TestimonialsSection = () => {
     return (
-        <section id="testimonials" className="px-6 py-24 bg-white/5">
+        <section id="testimonials" className="px-6 py-24">
             <div className="max-w-6xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
