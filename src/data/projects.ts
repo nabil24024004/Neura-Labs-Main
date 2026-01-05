@@ -36,7 +36,7 @@ export const projects: Project[] = [
         role: "Product Design, UI/UX Design, Frontend Engineering, Backend Architecture",
         techStack: ["Next.js", "React", "PostgreSQL", "Framer Motion", "Tailwind CSS"],
         status: "Live (Real Users)",
-        platform: "Web (Mobile-First Responsive)",
+        platform: "Web App",
         liveUrl: "https://peerhireaaub.vercel.app",
         behanceUrl: "https://www.behance.net/neuralabs-projects",
         images: [
