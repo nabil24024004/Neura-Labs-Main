@@ -34,7 +34,7 @@ export const projects: Project[] = [
         description: "A university-exclusive platform for outsourcing varsity work",
         gradient: "from-blue-500/20 to-purple-500/20",
         role: "Product Design, UI/UX Design, Frontend Engineering, Backend Architecture",
-        techStack: ["Next.js", "Lovable Cloud", "PostgreSQL", "Realtime Messaging", "Object Storage"],
+        techStack: ["Next.js", "React", "PostgreSQL", "Framer Motion", "Tailwind CSS"],
         status: "Live (Real Users)",
         platform: "Web (Mobile-First Responsive)",
         liveUrl: "https://peerhireaaub.vercel.app",
