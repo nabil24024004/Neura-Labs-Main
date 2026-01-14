@@ -59,13 +59,13 @@ export const ServicesSection = () => {
               whileHover={{ y: -10 }}
               className="glass-panel rounded-2xl p-8 group hover:shadow-glow smooth-transition"
             >
-              <motion.div
+              {/* <motion.div
                 whileHover={{ rotate: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0 }}
                 className="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center mb-6 group-hover:bg-white/20 smooth-transition"
               >
                 <service.icon className="w-8 h-8" />
-              </motion.div>
+              </motion.div> */}
 
               <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
               <p className="text-muted-foreground mb-6">{service.description}</p>
