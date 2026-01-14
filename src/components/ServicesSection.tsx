@@ -60,7 +60,7 @@ export const ServicesSection = () => {
               className="glass-panel rounded-2xl p-8 group hover:shadow-glow smooth-transition"
             >
               <motion.div
-                whileHover={{ rotate: 360 }}
+                whileHover={{ rotate: 0 }}
                 transition={{ duration: 0.6 }}
                 className="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center mb-6 group-hover:bg-white/20 smooth-transition"
               >
