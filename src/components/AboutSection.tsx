@@ -6,25 +6,25 @@ import jamilImage from "@/assets/jamil-jim.png";
 import rezwanImage from "@/assets/rezwan-shajib.jpg";
 const founders = [{
   name: "Azwad Abrar",
-  role: "Founder, Product Architect & Creative Director",
+  role: "Co-founder, Product Architect & Creative Director",
   quote: "I design how intelligence feels.",
   color: "from-white/20 to-white/5",
   image: azwadImage
 }, {
   name: "Ahmed Mehedi",
-  role: "Founder, Business Analyst & Automation Specialist",
+  role: "Co-founder, Business Analyst & Automation Specialist",
   quote: "I teach systems to think.",
   color: "from-white/20 to-white/5",
   image: ahmedImage
 }, {
   name: "Jamil Jim",
-  role: "Founder, AI Engine & Logic Specialist",
+  role: "Co-founder, AI Engine & Logic Specialist",
   quote: "I connect everything.",
   color: "from-white/20 to-white/5",
   image: jamilImage
 }, {
   name: "Rezwan Shajib",
-  role: "Founder, Full-Stack Lead & Technical Strategist",
+  role: "Co-founder, Full-Stack Lead & Technical Strategist",
   quote: "I turn ideas into living code.",
   color: "from-white/20 to-white/5",
   image: rezwanImage
